@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper
+        {
+            width: 100%;
+            height: 425vh;
+            border: 5px solid black;
+           background-color:white;
+        }
+        .mainmenu
+        {
+            width: 100%;    
+            height: 10vh;
+           /* border: 5px solid rgb(241, 177, 177); */
+            background-color: rgb(74, 74, 73);
+            display: flex;
+        }
+        .logo
+        {
+            width:35%;
+            color: rgb(232, 232, 56);
+            padding: 10px;
+            padding-left: 60px;
+          
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 25px;
+        }
+        .header
+        {
+            width:65%;
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+           
+            font-size: 20px;
+            text-decoration: none; 
+            color:white;
+            align-items: center;
+           
+            padding-left: 170px;
+              
+        }
+        .header a
+        {
+            text-decoration: none; 
+            color:rgb(235, 239, 242);
+            align-items: center;
+            padding:10px;
+            padding-left: 30px;
+            
+        }
+        .mainpage
+        {
+            width: 100%;    
+            height: 120vh;
+          /*   border: 5px solid rgb(143, 214, 228); 
+            background-color: rgb(230, 208, 177);  */
+            background-image: url(/images/pc.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .mainpage h3
+        {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+           color: aliceblue;
+           padding-top: 250px;
+        }
+        .mainpage h1
+        {
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+           color: aliceblue;
+        }
+        .mainpage button
+        {
+            width: 20%;
+            height: 8vh;
+            background-color: yellow;
+            font-size: 35px;
+            font-family: 'Times New Roman', Times, serif;
+           
+            border: 0;
+            margin-left:500px;
+            margin-top:10px;
+            
+        }
+        .nav
+        {
+            width: 100%;    
+            height: 20vh;
+           /*  border: 5px solid rgb(16, 18, 19);
+            background-color: rgb(237, 237, 146); */
+            text-align: center;
+            padding-top: 10px;
+        }
+        .nav2
+        {
+            width: 100%;    
+            height: 50vh;
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(132, 216, 128); */
+            display: flex;
+            padding-left: 10px;
+            
+        }
+        .item1
+        {
+            width: 33%;    
+          /*  border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+           padding: 15px;
+           text-align: justify;
+        }
+        .item2
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+            padding: 15px;
+            text-align: justify;
+        }
+        .item3
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+            padding: 15px;
+            text-align: justify;
+        }
+        .slider
+        {
+            width: 100%;    
+            height: 15vh;
+          /*  border: 5px solid rgb(16, 18, 19);*/
+            background-color: rgb(233, 233, 227); 
+            text-align: center;
+            padding-top: 10px;
+        }
+        .box
+        {
+            width: 100%;    
+            height: 60vh;
+          /*  border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(132, 216, 128); */
+            display: flex;
+           padding-left: 10px;
+           background-color: rgb(233, 233, 227);
+        }
+        .box1
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147);  */
+            text-align: center;
+        }
+        .box1 img
+        {
+            width: 100%;
+            height: 45vh;
+            padding: 10px;
+        }  
+        .box2
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .box2 img
+        {
+            width: 100%;
+            height: 45vh;
+            padding: 10px;
+
+        }  
+        .box3
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .box3 img
+        {
+            width: 100%;
+            height: 45vh;
+            padding: 10px;
+        }  
+
+
+
+        .div
+        {
+            width: 100%;    
+            height: 60vh;
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(132, 216, 128);*/
+            display: flex;
+           padding-left: 10px;
+           background-color: rgb(233, 233, 227);
+        }
+        .div1
+        {
+            width: 33%;    
+        /*    border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .div1 img
+        {
+            width: 100%;
+            height: 45vh;
+            padding: 10px;
+        }  
+        .div2
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .div2 img
+        {
+            width: 100%;
+            height: 45vh;
+            padding: 10px;
+        }  
+        .div3
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .div3 img
+        {
+            width: 100%;
+            height: 45vh;
+            padding: 10px;
+        }  
+
+        .add
+        {
+            width: 100%;    
+            height: 15vh;
+          /*  border: 5px solid rgb(16, 18, 19);
+            background-color: rgb(237, 237, 146); */
+            text-align: center;
+            padding-top: 10px;
+            background-color: rgb(233, 233, 227);
+        }
+
+        .image
+        {
+            width: 100%;    
+            height: 60vh;
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(132, 216, 128); */
+            display: flex;
+           padding-left: 10px;
+           background-color: rgb(233, 233, 227);
+        }
+        .image1
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .image1 img
+        {
+            width: 80%;
+            height: 45vh;
+            border-radius: 50%;
+            padding: 25px;
+
+        }  
+        .image2
+        {
+            width: 33%;    
+           /* border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .image2 img
+        {
+            width: 80%;
+            height: 45vh;
+            border-radius: 50%;
+            padding: 25px;
+        }  
+        .image3
+        {
+            width: 33%;    
+          /*  border: 5px solid rgb(108, 171, 202);
+            background-color: rgb(238, 124, 147); */
+            text-align: center;
+        }
+        .image3 img
+        {
+            width: 80%;
+            height: 46vh;
+            border-radius: 50%;
+            padding: 25px;
+        }  
+        .footer
+        {
+            text-align: center;
+            width: 100%;
+            height: 10vh;
+          /*  border: 10px solid green;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mainmenu">
+            <div class="logo">End Originator</div>
+            <div class="header">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Product</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="mainpage">
+            <h3>Welcome To Our Studio!</h3>
+            <br>
+            <h1>It's Nice To Meet You</h1>
+            <button type="button">Subscrib</button>
+        </div>
+
+        <div class="nav">
+            <h1>Services</h1>
+            <h3>Lorem ipsum is placeholder text commonly</h3>
+        </div>
+                    
+
+        <div class="nav2">
+            <div class="item1">
+                <h1>For Student</h1>
+                <br>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. .</h3>
+                </div>
+                
+            
+
+            <div class="item2">
+                <h1>Services</h1>
+                <br>
+                <h3>Some services aim to help students overcome unique barriers, such as learning and personal
+                     challenges. These offices also provide general counseling, tutoring, mentorship, and career
+                      planning assistance. You might also find here accessibility options and activities for 
+                      students with limited English proficiency.</h3>
+            </div>
+
+            <div class="item3">
+                <h1>Design</h1>
+                <br>
+                <h3>A combination of aesthetic and functional elements, web design is a type of digital design 
+                    that determines the look of a website—such as its colors, fonts, graphics and user interface
+                     (see our guide on website design best practices ). Today, creating a website is one of the 
+                     pillars of having an online presence.</h3>
+            </div>
+        </div>
+
+
+            <div class="slider">
+               <h1>PORTFOLIO</h1>
+               <h3>Lorem ipsum is placeholder text commonly</h3>
+            </div>
+
+            <div class="box">
+                <div class="box1">
+                    <img src="/images/clothes.jpg">
+                    <h1>Threads</h1>
+               <h3>Shooping</h3>
+                </div>
+
+                <div class="box2">
+                    <img src="/images/exploree.jpg">
+                    <h1>Explore</h1>
+               <h3>Exploring the movement</h3>
+                </div>
+
+                <div class="box3">
+                    <img src="/images/camera.jpg">
+                    <h1>Camera</h1>
+               <h3>Capturing pictures</h3>
+                </div>
+            </div>
+
+            <div class="div">
+                <div class="div1">
+                    <img src="/images/design.jpg">
+                    <h1>Design</h1>
+               <h3>Cute disinging</h3>
+                </div>
+
+                <div class="div2">
+                    <img src="/images/gallrayy.jpg">
+                    <h1>Gallery</h1>
+               <h3>Photograpy</h3>
+                </div>
+
+                <div class="div3">
+                    <img src="/images/tree4.jfif">
+                    <h1>Tree</h1>
+               <h3>Beautiful nature</h3>
+                </div>
+            </div>
+            
+            <div class="add">
+                <h1>Our Amazing Team</h1>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+            </div>
+
+            <div class="image">
+                <div class="image1">
+                    <img src="/images/bro.jpg">
+                    <h1>Shubham Jadhav</h1>
+                    <h3>Civil Engineer</h3>
+                </div>
+                <div class="image2">
+                    <img src="/images/darshan.jpg">
+                    <h1>Darshan raval</h1>
+                    <h3>Elctrical Engineer</h3>
+                </div>
+                <div class="image3">
+                    <img src="/images/sushant.jpg">
+                    <h1>Sushant Rajput</h1>
+                    <h3>Mechanical Engineer</h3>
+                </div>
+            </div>
+            \
+            <div class="footer">
+                <h3>Copyright @2020.Design by Priyanka Jadhav</h3>
+            </div>
+    </div>
+</body>
+</html>

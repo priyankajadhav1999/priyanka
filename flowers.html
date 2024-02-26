@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper
+        {
+            width: 100%;
+            height: 500vh;
+            border: 2px solid black;
+           background-color: white;  
+        }
+        .header
+        {
+            width: 100%;
+            height: 11vh;
+            border: 1px solid red;
+            background-color: white;  
+           display: flex;
+        }
+        .logo
+        {
+            width: 20%;
+           
+         /*   background-color: aqua;  */
+            color:rgb(8, 8, 8);
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 13px;
+
+        }
+        .menu
+        {
+            width: 50%;
+            padding-top: 15px;
+         /*  background-color: bisque;   */
+            text-align: center;
+            padding-left:50px;
+        }
+        .menu a
+        {
+            
+        font-size: 25px;
+        padding-left: 10px;
+        padding: 10px;
+   
+        text-decoration: none; 
+        color:rgb(5, 5, 5);
+        align-items: center;
+
+        }
+        .menu a:hover
+        {
+        color: rgb(17, 17, 17);
+        background-color: pink;
+    
+        }
+           
+       
+        .icons
+        {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            text-align: center;
+            margin: 15px;
+            margin-left: 120px;
+        }
+        .slider
+        {
+            width: 100%;
+            height:70vh;
+            background-color: rgb(241, 201, 208);
+            background-image: url(/images/dekstop\ flower.png);
+            background-repeat: no-repeat;
+            text-align: center;
+        }
+        .slider h1
+        {
+            padding-top: 80px;
+            padding-left: 500px;
+            font-size: 43px;
+        }
+        .slider h2
+        {
+            padding-left: 340px;
+            font-size: 29px;
+            color: rgb(240, 114, 135);
+        }
+        .slider p
+        {
+            padding-left: 660px;
+            font-size: 20px;
+            text-align:initial;
+        }
+        .slider button
+        {
+            width: 200px;
+            height: 40px;
+            font-size: 25px;
+            border-radius: 30px;
+           margin-left: 260px;
+           color: white;
+           background-color: black;
+        }
+        .slider button:hover
+        {
+            color: rgb(17, 17, 17);
+        background-color:pink;
+        }
+        .About
+        {
+            width: 100%;
+            height: 80vh;
+            background-color:white;
+            border: 1px ssolid black;
+        }
+        .about1
+        {
+            height: 12vh;
+           background-color:rgb(249, 230, 233); 
+            text-align: center;
+            
+            font-size: 22px;    
+            margin: 25px 80px    ;  
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              
+        }
+        .about1:hover
+        {
+            color: rgb(234, 47, 119);
+        }
+        .box
+        {
+            width: 100%;
+            height: 65vh;
+          /*  background-color: blanchedalmond; */
+            display: flex;
+        }
+       .box1
+       {
+        width: 50%;
+       /* background-color: chartreuse;  */
+       
+        height: 65vh;
+        padding: 50px;
+        text-align:justify;
+        padding-left: 100px;
+
+       }
+       .box1 h1
+       {
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       .box1 p
+       {
+        font-size: 20px;
+       }
+       .box1 button
+        {
+            width: 200px;
+            height: 40px;
+            font-size: 25px;
+            border-radius: 30px;
+         
+           color: white;
+           background-color: black;
+        }
+        .box1 button:hover
+        {
+            color: rgb(17, 17, 17);
+        background-color:pink;
+        }
+
+        .box2
+        {
+            width: 50%;
+     /*   background-color: rgb(234, 240, 227);   */
+        height: 65vh;
+           padding-top: 15px;
+        font-size: 20px;
+        text-align: center;
+        
+        }
+        .box2 h1{
+            text-align: left;
+            padding-left: 68px;
+            padding-top: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .box2 video
+        {
+            width: 80%;
+            height: 48vh;
+            padding-bottom: 30px;
+            padding-right: 70px;
+            padding-top: 20px;
+        }
+
+        .Service
+        {
+            width: 100%;
+            height: 18vh;
+            background-color: gainsboro;
+          /*  background-color: beige;  */
+        padding: 0;
+        display: flex;
+        padding-left: 150px;
+        gap: 40px;
+        text-align: center;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        }
+        
+        .Service1
+        {
+            width: 25%;
+            height: 13vh;
+            padding: 10px 15px;
+            background-color: white;
+           
+            
+        }
+        .Service1 img{
+            width: 40px;
+            height: 40px;
+            float: left;
+        }
+        .Service2
+        {
+            width: 25%;
+            height: 13vh;
+            padding: 10px 15px;
+            background-color:white;
+        }
+        .Service2 img{
+            width: 40px;
+            height: 40px;
+            float: left;
+        }
+        .Service3
+        {
+            width: 25%;
+            height: 13vh;
+            padding: 10px 15px;
+            background-color: white;
+        }
+        .Service3 img{
+            width: 40px;
+            height: 40px;
+            float: left;
+        }    
+        .product
+        {
+            width: 100%;
+            height: 120vh;
+            background-color: burlywood;
+        }
+        .product1
+        {
+            width: 90%;
+            height: 10vh;
+            /*background-color: rgb(184, 181, 178);  */
+            margin: 10px;
+            text-align: center;
+            margin-left: 70px;
+            margin-top: 20px;
+            
+            font-size: 22px;
+            background-color:rgb(249, 230, 233); 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .product1:hover
+        {
+            color: rgb(234, 47, 119);
+        }
+       .product2
+       {
+        width: 90%;
+        height: 50vh;
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        margin-left: 70px;
+       }
+        .pic1
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: aquamarine;
+            margin-left: 40px;
+        }   
+        
+        .pic1 img
+        {
+            width: 80%;
+            height: 35vh;
+            padding-top: 10px;
+        }
+        .pic2
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(215, 233, 227);
+        }   
+        .pic2 img
+        {
+            width: 80%;
+            height: 35vh;
+            padding-top: 10px;
+        }
+        .pic3
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(121, 171, 154);
+        }   
+        .pic3 img
+        {
+            width: 80%;
+            height: 35vh;
+            padding-top: 10px;
+        }
+        .product3
+       {
+        width: 90%;
+        height: 50vh;
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        margin-left: 70px;
+        margin-top: 20px;
+       }
+        .pic4
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(231, 244, 188);
+            margin-left: 40px;
+        }   
+        
+        .pic4 img
+        {
+            width: 80%;
+            height: 35vh;
+            padding-top: 10px;
+        }
+        .pic5
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(232, 148, 47);
+        }   
+        .pic5 img
+        {
+            width: 80%;
+            height: 35vh;
+            padding-top: 10px;
+        }
+        .pic6
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(232, 207, 177);
+        }   
+        .pic6 img
+        {
+            width: 80%;
+            height: 35vh;
+            padding-top: 10px;
+        }
+
+        .Review
+        {
+            width: 100%;
+            height: 70vh;
+            background-color: rgb(223, 174, 109);
+        }
+        .review1
+        {
+            width: 90%;
+            height: 10vh;
+            /*background-color: rgb(184, 181, 178);  */
+            margin: 10px;
+            text-align: center;
+            margin-left: 70px;
+            margin-top: 20px;
+            
+            font-size: 22px;
+            background-color:rgb(249, 230, 233); 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .review1:hover
+        {
+            color: rgb(234, 47, 119);
+        }
+        .review2
+       {
+        width: 90%;
+        height: 50vh;
+        background-color: white;
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        margin-left: 70px;
+        font-size: 20px;
+        text-align: justify;
+       
+       }
+        .CR1
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: aquamarine;
+            margin-left: 40px;
+            padding: 30x;
+            
+        }   
+        .CR1 p
+        {
+            padding: 20px;
+        }
+       
+        .CR2
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(215, 233, 227);
+            padding: 10x;
+        }   
+        .CR2 p
+        {
+            padding: 20px;
+        }
+        .CR3
+        {
+            width: 30%;
+            height: 50vh;
+            background-color: rgb(121, 171, 154);
+            padding: 10x;
+        }   
+        .CR3 p
+        {
+            padding: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="logo">
+            Flower </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#product">Products</a>
+            <a href="#Review">Review</a>
+            <a href="#">Contact</a>
+
+        </div>
+        
+        <div class="icons">
+             <img src="/icons/heart.svg">
+          <img src="/icons/cart.svg">
+           <img src="/icons/chatbox.svg">
+            <img src="/icons/person.svg">  
+        
+        </div>
+        </div>
+
+
+        <div class="slider">
+            <h1>Fresh Beautiful Flowers</h1>
+            <h2>Order Natural Flowers</h2>
+            <p>Many occasions call for flowers, from birthday bouquets<br> and anniversary 
+               flowers to get-well gifts and retirement <br> celebration centerpieces.</p>
+               <br>
+                <button type="submit">Shop Now</button>
+        </div>
+
+        <div id="About"> 
+
+            <div class ="about1">
+              <h1>About Us</h1>
+            </div>
+
+            <div class="box">
+
+                <div class="box1">
+                    <h1>Why Choose Us</h1>
+                    <br>
+                    
+                    <p>We've been delivering online flowers since 2015 and over the years,
+                         we've become the go-to online florist for millions of customers around 
+                         the world. We know that behind every bouquet delivery there's an emotional
+                        message being expressed. A personal message that is shared despite great distances
+                        between people. Making smiles travel around the world is our mission!</p>
+                        <br>
+                    
+                        <button type="submit">Read More</button>
+                </div>
+                <div class="box2">
+                    <h1>Best Flowers Seller</h1>
+                  
+                    <video controls src="images/video/flowers vid.mp4"></video>
+                </div>
+
+            </div>
+        </div>
+       
+            <div class="Service">
+                <div class="Service1">
+                    <img src="icons/gift-outline.svg">
+                    <h2>Offer & Gift</h2>
+                    
+                    <h4>On All Orders</h3>
+                </div>
+                <div class="Service2">
+                    <img src="icons/card-outline.svg">
+                    <h2>Secure Payment</h2>
+                    <h4>Protected By Paypal</h4>
+                    
+                </div>
+                <div class="Service3">
+                    <img src="icons/reload-outline.svg">
+                    <h2>1 days Return </h2>
+                    <h4>Money Back Guarantee</h4>
+                </div>
+                
+            </div>
+
+
+            <div id="product">
+
+                <div class="product1">
+                    <h1>Latest Products</h1>
+                </div>
+
+                <div class="product2">
+                    
+                    <div class="pic1">
+                    <img src="images/flower1.png">
+                    <h1>Flower Pot</h1>
+                    <h2>$15.99</h2>
+                    </div>
+
+                    <div class="pic2">
+                        <img src="images/flower4.png">
+                        <h1>Flower Pot</h1>
+                        <h2>$17.99</h2>
+                        </div>
+
+                        <div class="pic3">
+                            <img src="images/flower3.png">
+                            <h1>Flower Pot</h1>
+                            <h2>$15.70</h2>
+                            </div>
+                </div>
+
+                <div class="product3">
+                    
+                    <div class="pic4">
+                    <img src="images/flower5.png">
+                    <h1>Flower Pot</h1>
+                    <h2>$14.99</h2>
+                    </div>
+
+                    <div class="pic5">
+                        <img src="images/flower6.png">
+                        <h1>Flower Pot</h1>
+                        <h2>$21.99</h2>
+                        </div>
+
+                        <div class="pic6">
+                            <img src="images/flower2.png">
+                            <h1>Flower Pot</h1>
+                            <h2>$12.99</h2>
+                            </div>
+
+
+
+                 </div>
+
+            </div>
+
+                <div id ="Review">
+                    <div class="review1">
+                        <h1>Customer's Review</h1>
+                    </div>
+
+                    <div class="review2">
+                        <div class="CR1">
+                            <p>We've been delivering online flowers since 2015 and over the years,
+                                we've become the go-to online florist for millions of customers around 
+                                the world. We know that behind every bouquet delivery there's an emotional
+                               message being expressed.</p>
+                               
+                        </div>
+
+                        <div class="CR2">
+                            <p>We've been delivering online flowers since 2015 and over the years,
+                                we've become the go-to online florist for millions of customers around 
+                                the world. We know that behind every bouquet delivery there's an emotional
+                               message being expressed.</p>
+                        </div>
+
+                        <div class="CR3">
+                            <p>We've been delivering online flowers since 2015 and over the years,
+                                we've become the go-to online florist for millions of customers around 
+                                the world. We know that behind every bouquet delivery there's an emotional
+                               message being expressed.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <div class="form-control">
+                        <label for="name">Name</label><br>
+                        <input type="text" id="Name" placeholder="Name" autocomplete="off"><br>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" placeholder="Email" autocomplete="off"><br>
+                        <label for="number">Mobile Number</label><br>
+                        <input type="number" id="number" placeholder="Mobile Number" autocomplete="off"><br>
+                        <label for="message">Message</label><br>
+                        <input type="text" id="Message" placeholder="Message" autocomplete="off"><br>
+                        <input type="submit" value="Send message">
+                    </div>
+                </div>
+
+
+    </div>
+</body>
+</html>
